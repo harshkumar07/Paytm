@@ -20,6 +20,7 @@ function App() {
       <Route path ="/send" element={<SendMoney/>} />
       <Route path ="/profile" element={<Profile/>} />
       <Route path ="/update" element={<Update/>} />
+      <Route path="/" element={<Navigate to="/signin" />} />
     </Routes>
     </BrowserRouter>
     <Toaster/>
