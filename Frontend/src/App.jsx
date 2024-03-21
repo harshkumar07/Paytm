@@ -7,6 +7,7 @@ import Dashboard from './Components/Dashboard'
 import SendMoney from './Components/SendMoney'
 import Profile from './Components/Profile'
 import Update from './Components/Update'
+import Redirect from './Components/Redirect'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       <Route path ="/send" element={<SendMoney/>} />
       <Route path ="/profile" element={<Profile/>} />
       <Route path ="/update" element={<Update/>} />
-      <Route path="/" element={<Navigate to="/signin" />} />
+      <Route path="/" element={<Redirect to="/signin" />} />
     </Routes>
     </BrowserRouter>
     <Toaster/>
