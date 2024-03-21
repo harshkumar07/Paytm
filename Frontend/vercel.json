@@ -1,12 +1,5 @@
 {
-    "routes": [
-      { "src": "/signup", "dest": "/signup" },
-      { "src": "/signin", "dest": "/signin" },
-      { "src": "/dashboard", "dest": "/dashboard" },
-      { "src": "/send", "dest": "/send" },
-      { "src": "/profile", "dest": "/profile" },
-      { "src": "/update", "dest": "/update" },
-      { "src": "/", "dest": "/signin" }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
