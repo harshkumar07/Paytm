@@ -85,7 +85,7 @@ function Signup() {
                         return;
                     }
                     
-                const response = await axios.post('http://localhost:3000/api/v1/user/signup', {
+                const response = await axios.post('https://paytm-o1im.onrender.com/api/v1/user/signup', {
                     username,
                     firstName,
                     lastName,
