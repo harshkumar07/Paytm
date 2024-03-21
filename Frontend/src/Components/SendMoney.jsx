@@ -37,6 +37,7 @@ function  SendMoney(){
                 // console.log(response.data.message);
     
                 if (response.data.message === "Transaction Successful") {
+                    navigate('/dashboard')
                     toast.success("Transaction Successful", {
                         position,
                         style: {
