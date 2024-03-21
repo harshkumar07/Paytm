@@ -26,7 +26,7 @@ export const Users = () => {
 
     useEffect(() => {
         if (username) {
-            axios.get("hhttps://paytm-o1im.onrender.com/api/v1/user/bulk?filter=" + filter, {
+            axios.get("https://paytm-o1im.onrender.com/api/v1/user/bulk?filter=" + filter, {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }

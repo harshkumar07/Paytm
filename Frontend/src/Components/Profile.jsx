@@ -16,7 +16,7 @@ function Profile() {
 
   const deleteUser = async()=>{
     try{
-        await axios.delete("hhttps://paytm-o1im.onrender.com/api/v1/user/delete",{
+        await axios.delete("https://paytm-o1im.onrender.com/api/v1/user/delete",{
           headers:{
             Authorization :"Bearer "+localStorage.getItem("token")
           }

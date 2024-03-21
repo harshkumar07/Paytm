@@ -7,7 +7,7 @@ export const Balance = () => {
     useEffect(() => {
         const fetchBalance = async () => {
         try{
-        const response =await axios.get("hhttps://paytm-o1im.onrender.com/api/v1/account/balance",{
+        const response =await axios.get("https://paytm-o1im.onrender.com/api/v1/account/balance",{
         headers:{
             Authorization :"Bearer "+localStorage.getItem("token")
         }
