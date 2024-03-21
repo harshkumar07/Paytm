@@ -9,7 +9,7 @@ export const Users = () => {
 
     const getUsername = async () => {
         try {
-            const response = await axios.get("https://paytm-o1im.onrender.com/api/v1/user/username", {
+            const response = await axios.get("https://payme-backend.vercel.app/api/v1/user/username", {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -26,7 +26,7 @@ export const Users = () => {
 
     useEffect(() => {
         if (username) {
-            axios.get("https://paytm-o1im.onrender.com/api/v1/user/bulk?filter=" + filter, {
+            axios.get("https://payme-backend.vercel.app/api/v1/user/bulk?filter=" + filter, {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }

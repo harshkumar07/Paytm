@@ -26,7 +26,7 @@ function  SendMoney(){
         const isSmallScreen = window.innerWidth <= 600; 
         const position = isSmallScreen ? 'bottom-right' : 'top-right';
             if (amount > 0) {
-                const response = await axios.post("https://paytm-o1im.onrender.com/api/v1/account/transfer", {
+                const response = await axios.post("https://payme-backend.vercel.app/api/v1/account/transfer", {
                     to: id,
                     amount
                 }, {

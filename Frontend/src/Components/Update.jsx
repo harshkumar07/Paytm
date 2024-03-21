@@ -33,7 +33,7 @@ function Update() {
       }
     
         try {
-            const response = await axios.put("https://paytm-o1im.onrender.com/api/v1/user/", {
+            const response = await axios.put("https://payme-backend.vercel.app/api/v1/user/", {
                 firstName,
                 lastName,
                 password,

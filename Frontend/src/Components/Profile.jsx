@@ -16,7 +16,7 @@ function Profile() {
 
   const deleteUser = async()=>{
     try{
-        await axios.delete("https://paytm-o1im.onrender.com/api/v1/user/delete",{
+        await axios.delete("https://payme-backend.vercel.app/api/v1/user/delete",{
           headers:{
             Authorization :"Bearer "+localStorage.getItem("token")
           }
@@ -39,7 +39,7 @@ function Profile() {
 
   const getUsername =async()=>{
     try{
-      const response = await axios.get("https://paytm-o1im.onrender.com/api/v1/user/username",{
+      const response = await axios.get("https://payme-backend.vercel.app/api/v1/user/username",{
         headers:{
           Authorization:"Bearer "+ localStorage.getItem("token")
         }
@@ -54,7 +54,7 @@ function Profile() {
   
   const fetchBalance = async () => {
     try{
-    const response =await axios.get("https://paytm-o1im.onrender.com/api/v1/account/balance",{
+    const response =await axios.get("https://payme-backend.vercel.app/api/v1/account/balance",{
     headers:{
         Authorization :"Bearer "+localStorage.getItem("token")
     }
