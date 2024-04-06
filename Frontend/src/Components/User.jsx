@@ -60,7 +60,7 @@ function User({ user }) {
         <div className="flex justify-between my-auto">
             <div className="flex my-auto">
                 <div className="rounded-full h-10 w-10 bg-slate-300 p-0 flex justify-center mt-1 mb-2 mr-2 my-auto">
-                    <div className="flex flex-col justify-center h-full text-xl my-auto">{user.firstName[0].toUppercase()}</div>
+                    <div className="flex flex-col justify-center h-full text-xl my-auto">{user.firstName[0].toUpperCase()}</div>
                 </div>
                 <div className="flex flex-col justify-center h-ful my-auto">
                     <div className="font-semibold my-auto">{user.firstName} {user.lastName}</div>
